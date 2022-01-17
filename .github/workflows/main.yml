@@ -18,7 +18,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: docker build
+      - name: docker build containers
         run: |
         docker build ./container01 -t heikoliedtke/hsrm2022:01
+        run: |
+        docker build ./container02 -t heikoliedtke/hsrm2022:02
+        
         
