@@ -19,7 +19,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          repo-token ${{secrets.GH_SECRET}}
+          repo-token: ${{secrets.GH_SECRET}}
       - name: docker build containers
         run: |
            docker build ./container01 -t ghcr.io/heikoliedtke/hsrmcontainer01:latest
