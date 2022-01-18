@@ -19,17 +19,24 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         
-      - name: docker build containers
+      - name: docker build container01
         run: |
            docker build ./container01 -t ghcr.io/heikoliedtke/hsrm2021/container01:latest
+           
+      - name: docker build container02
+        run: |
+          docker build ./container02 -t ghcr.io/heikoliedtke/hsrm2021/container02:latest
                    
       - name: Log in to registry
         # This is where you will update the PAT to GITHUB_TOKEN
         run: echo "${{ secrets.GH_SECRET }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
            
-      - name: push image to packages
+      - name: push container 01 image to packages
         run: |
           docker push ghcr.io/heikoliedtke/hsrm2021/container01:latest
+      - name: push container 02 image to packages
+        run: |
+          docker push ghcr.io/heikoliedtke/hsrm2021/container02:latest
            
       
      
