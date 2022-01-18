@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: docker build containers
         run: |
-           docker build ./container01 -t heikoliedtke/hsrm2022:01
+           docker build ./container01 -t ghcr.io/heikoliedtke/hsrmcontainer01:latest
            
       - name: push image to packages
         run: |
