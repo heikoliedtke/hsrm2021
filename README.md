@@ -1,4 +1,7 @@
 # hsrm2021
+Update for hsrm2022 session
+
+
 Examples for HSRM 2021
 
 # startup1.cfg
