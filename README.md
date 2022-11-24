@@ -1,4 +1,6 @@
 # hsrm2021
+Update for hsrm2022 session
+Lets do something really crazy this year
 Examples for HSRM 2021
 
 # startup1.cfg
@@ -25,6 +27,3 @@ Examples for HSRM 2021
 # container02
 - Dockerfile
 - Flask Webapp
-
-
-test
