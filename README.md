@@ -2,7 +2,7 @@
 Update for hsrm2022 session
 Lets do something really crazy this year
 Examples for HSRM 2022
-
+test
 # startup1.cfg
 - install nginx
 - install git
