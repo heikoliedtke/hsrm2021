@@ -2,7 +2,6 @@
 Update for hsrm2022 session
 Lets do something really crazy this year
 Examples for HSRM 2022
-Fire an action
 
 # startup1.cfg
 - install nginx
