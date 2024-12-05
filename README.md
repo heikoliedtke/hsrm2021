@@ -30,3 +30,4 @@ test
 
 
 # update 2024
+- check that all pipelines are running
