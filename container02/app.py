@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, escape, session
+from flask import Flask, render_template, request, session
+from markupsafe import escape
 import os
 
 app = Flask(__name__)
