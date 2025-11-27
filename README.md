@@ -31,3 +31,7 @@ test
 
 # update 2024
 - check that all pipelines are running
+
+# Updates for 2025
+- Docker base images updated to Ubuntu 22.04.
+- Python dependencies (Flask and uWSGI) updated to their latest stable versions for security and stability.
